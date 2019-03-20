@@ -15,10 +15,28 @@ const myfbz = require('./fizzbuzz.js'); //import statemnet
 
 const myeven = require('./evens.js'); //import statemnet
 
-
-
-
-num_helper_func = (x,y) =>
+const num_helper_func = (x,y) =>
 {
-
+var final_array =[];
+	for(var i=x; i<=y; i++)
+	{
+		var sub_array=[];
+		if (evens(x,y)===true)
+			sub_array.push("Even,");
+		else
+			sub_array.push("Odd,");
+		if(prime_number_calculator(x,y)==true)
+			sub_array.push("Prime");
+		if(fizzbuzz(x,y)=="FizzBuzz") 
+			sub_array.push("FizzBuzz");
+		else if(FizzBuzz(x,y)=="Buzz")
+			sub_array.push("Buzz");
+		else if(FizzBuzz(x,y)=="Fizz")
+			sub_array.push("Fizz");
+		else
+			sub_array.push(i);
+		final_array.push(sub_array);
+	}
+	console.log(final_array);
 }
+num_helper_func(0,100);

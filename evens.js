@@ -10,7 +10,7 @@ var myeven = evens = (x,y) =>
 			val = false;
 		}
 
-		console.log(val);
+		return val;
 	}
 }
 
