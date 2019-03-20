@@ -1,24 +1,24 @@
-
-    at 0, print out: ['even']
-    at 3, print out: ['odd', 'prime', 'fizz']
-    at 30, print out: ['even', 'fizzbuzz']
-
-The catch: We want to see you using helper functions from your earlier assignments for each of those checks / conditions
-
-** Make sure that your code works properly before proceeding to the next step.
-
 //Pseuodo code
 /*
 ____________________________________________________________
 //Create a function that will take in the four function even, odd, prime and fizzbars as arguments
-//call the even, prime and fizzbuzz helper function and also create the odd function 
-//create an empty array
+//Import the even, prime and fizzbuzz helper functions
+//create an empty array to hold smaller arrays
+//Inside a for loop
 //use if statements to populate the array by testing the four conditions
 //Print out the contents of the array 
 ____________________________________________________________
 */
+const prime_no = require('./sort_primes.js'); //import statemnet
 
-num_helper_func = (e, o, p, fb) =>
+const myfbz = require('./fizzbuzz.js'); //import statemnet
+
+const myeven = require('./evens.js'); //import statemnet
+
+
+
+
+num_helper_func = (x,y) =>
 {
 
 }

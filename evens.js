@@ -1,9 +1,9 @@
-let evens = (x,y) =>
+var myeven = evens = (x,y) =>
 {
 	val = false;
 	for(var i = x; i<=y; i++)
 	{
-		if(i%2==0 && i<=y){
+		if(i%2==0){
 			val = true;
 		}
 		else{
@@ -15,3 +15,5 @@ let evens = (x,y) =>
 }
 
 console.log(evens(0,100));
+
+module.exports = myeven; //export statement

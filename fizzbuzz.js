@@ -1,5 +1,5 @@
 
-fizzbuzz=(x,y) => {
+var myfbz = fizzbuzz=(x,y) => {
 
 for (var i =x; i<=y; i++) {
 
@@ -20,4 +20,4 @@ else{
 
 }
 }
-fizzbuzz(1,100)
+module.exports = myfbz; //export statement

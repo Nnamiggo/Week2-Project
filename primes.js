@@ -1,4 +1,4 @@
-prime_number_calculator=(m,n) => {
+prime_no = prime_number_calculator=(m,n) => {
 	for (var i = m; i<=n; i++)
 	{
 		var are_you_prime = true;
@@ -16,6 +16,5 @@ prime_number_calculator=(m,n) => {
 				if (are_you_prime==true ){return true;}
 	}
 }
-var bool =prime_number_calculator(40);
-console.log(bool)
+module.exports = prime_no; //export statement
 
