@@ -1,23 +1,21 @@
 
-var myfbz = fizzbuzz=(x,y) => {
-//val =false;
-for (var i =x; i<=y; i++) {
+var myfbz = fizzbuzz=(x) => {
 
-if (i%3===0 && i%5===0){
-  return FizzBuzz;
+if (x%3===0 && x%5===0){
+  return "FizzBuzz";
 }
 
-else if (i%3===0) {
-  return Fizz;
+else if (x%3===0) {
+  return "Fizz";
 }
 
-else if (i%5===0){
-  return Buzz;
+else if (x%5===0){
+  return "Buzz";
 }
 else{
-  return i;
+  return x;
 }
 
 }
-}
+console.log(fizzbuzz(3));
 module.exports = myfbz; //export statement

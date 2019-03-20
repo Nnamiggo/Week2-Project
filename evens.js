@@ -1,19 +1,15 @@
-var myeven = evens = (x,y) =>
+var myeven = evens = (x) =>
 {
-	val = false;
-	for(var i = x; i<=y; i++)
+	if(x%2==0)
 	{
-		if(i%2==0){
-			val = true;
-		}
-		else{
-			val = false;
-		}
-
-		return val;
+		return true;
+	}
+	else
+	{
+		return false;
 	}
 }
 
-console.log(evens(0,100));
+console.log(evens(9));
 
 module.exports = myeven; //export statement
