@@ -11,8 +11,7 @@ prime_no = prime_number_calculator=(m) => {
 						return true;
 		
 				}
-				//if (are_you_prime==true ){return true;}
+				
 }
-console.log(prime_number_calculator(20));
 module.exports = prime_no; //export statement
 

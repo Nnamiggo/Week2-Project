@@ -17,5 +17,4 @@ else{
 }
 
 }
-console.log(fizzbuzz(3));
 module.exports = myfbz; //export statement

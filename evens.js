@@ -10,6 +10,4 @@ var myeven = evens = (x) =>
 	}
 }
 
-console.log(evens(9));
-
 module.exports = myeven; //export statement

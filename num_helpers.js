@@ -25,9 +25,9 @@ const num_helper_func = (x,y) =>
 
 		if (evens(i)===true)
 
-			sub_array.push("Even,");
+			sub_array.push("Even");
 		else
-			sub_array.push("Odd,");
+			sub_array.push("Odd");
 
 
 		if(prime_number_calculator(i)==true)
