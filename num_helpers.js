@@ -66,8 +66,12 @@ const num_helper_func = (x,y) =>
 			sub_array.push(i);
 
 console.log(sub_array);
-console.log()
-
+console.log("Prime numbers are:" +primesC.length);
+console.log("Even numbers are:" +evensC.length);
+console.log("Odd numbers are:" +oddsC.length);
+console.log("FizzBuzz numbers are:" +fizzbuzzC.length);
+console.log("Fizz numbers are:" +fizzC.length);
+console.log("Buzz numbers are:" +buzzC.length);
 	}
 }
 num_helper_func(0,100);
