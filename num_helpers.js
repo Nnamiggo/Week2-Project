@@ -76,14 +76,15 @@ const num_helper_func = (x,y) =>
 		/*else
 			sub_array.push(i);*/
 
-console.log(sub_array);
+console.log(i +": => " +sub_array);
 
 	}
-	console.log("Prime numbers are:" +primesC.length);
-console.log("Even numbers are:" +evensC.length);
-console.log("Odd numbers are:" +oddsC.length);
-console.log("FizzBuzz numbers are:" +fizzbuzzC.length);
-console.log("Fizz numbers are:" +fizzC.length);
-console.log("Buzz numbers are:" +buzzC.length);
+
+	console.log("\nPrime numbers are: " +primesC.length);
+	console.log("\nEven numbers are: " +evensC.length);
+	console.log("\nOdd numbers are: " +oddsC.length);
+	console.log("\nFizzBuzz numbers are: " +fizzbuzzC.length);
+	console.log("\nFizz numbers are: " +fizzC.length);
+	console.log("\nBuzz numbers are: " +buzzC.length);
 }
 num_helper_func(0,100);
