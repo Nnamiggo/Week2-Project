@@ -15,8 +15,12 @@ const myfbz = require('./fizzbuzz.js'); //import statemnet
 
 const myeven = require('./evens.js'); //import statemnet
 
+//To improve this code,
+//create arrays to hold evens , primes, odds, fizzbuzz, fizz and buzz numbers
+//print the length of these arrays
 const num_helper_func = (x,y) =>
 {
+	var evensC=[], oddsC =[], primesC=[], fizzbuzzC=[],fizzC=[], buzzC=[];
 
 	for(var i=x; i<=y; i++)
 	{
@@ -25,33 +29,62 @@ const num_helper_func = (x,y) =>
 
 		if (evens(i)===true)
 
-			sub_array.push("Even");
+			{
+				sub_array.push("Even");
+
+			evensC.push(i); // #improved
+		}
 		else
+		{
 			sub_array.push("Odd");
 
 
+			oddsC.push(i); // #improved
+		}
+
 		if(prime_number_calculator(i)==true)
 
-			sub_array.push("Prime");
+			{
+				sub_array.push("Prime");
 
+			primesC.push(i); // #improved
+		}
 
 		if(fizzbuzz(i)=="FizzBuzz") 
-
+			{
 			sub_array.push("FizzBuzz");
 
-		else if(fizzbuzz(i)=="Buzz")
+			fizzbuzzC.push(i); // #improved
+		}
 
+		if(fizzbuzz(i)=="Buzz")
+
+			{
 			sub_array.push("Buzz");
 
-		else if(fizzbuzz(i)=="Fizz")
+			buzzC.push(i); // #improved
+		}
+
+		if(fizzbuzz(i)=="Fizz")
+		{
 
 			sub_array.push("Fizz");
 
-		else
-			sub_array.push(i);
+			fizzC.push(i); // #improved
 
-console.log(sub_array);
+		}
+		/*else
+			sub_array.push(i);*/
+
+console.log(i +": => " +sub_array);
 
 	}
+
+	console.log("\nPrime numbers are: " +primesC.length);
+	console.log("\nEven numbers are: " +evensC.length);
+	console.log("\nOdd numbers are: " +oddsC.length);
+	console.log("\nFizzBuzz numbers are: " +fizzbuzzC.length);
+	console.log("\nFizz numbers are: " +fizzC.length);
+	console.log("\nBuzz numbers are: " +buzzC.length);
 }
 num_helper_func(0,100);
