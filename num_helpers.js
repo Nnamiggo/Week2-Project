@@ -15,8 +15,12 @@ const myfbz = require('./fizzbuzz.js'); //import statemnet
 
 const myeven = require('./evens.js'); //import statemnet
 
+//To improve this code,
+//create arrays to hold evens , primes, odds, fizzbuzz, fizz and buzz numbers
+//print the length of these arrays
 const num_helper_func = (x,y) =>
 {
+	var evensC=[], oddsC =[], primesC=[], fizzbuzzC=[],fizzC=[], buzzC=[];
 
 	for(var i=x; i<=y; i++)
 	{
