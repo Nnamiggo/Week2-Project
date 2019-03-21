@@ -29,49 +29,61 @@ const num_helper_func = (x,y) =>
 
 		if (evens(i)===true)
 
-			sub_array.push("Even");
+			{
+				sub_array.push("Even");
 
 			evensC.push(i); // #improved
+		}
 		else
+		{
 			sub_array.push("Odd");
 
 
 			oddsC.push(i); // #improved
+		}
 
 		if(prime_number_calculator(i)==true)
 
-			sub_array.push("Prime");
+			{
+				sub_array.push("Prime");
 
 			primesC.push(i); // #improved
+		}
 
 		if(fizzbuzz(i)=="FizzBuzz") 
-
+			{
 			sub_array.push("FizzBuzz");
 
 			fizzbuzzC.push(i); // #improved
+		}
 
-		else if(fizzbuzz(i)=="Buzz")
+		if(fizzbuzz(i)=="Buzz")
 
+			{
 			sub_array.push("Buzz");
 
 			buzzC.push(i); // #improved
+		}
 
-		else if(fizzbuzz(i)=="Fizz")
+		if(fizzbuzz(i)=="Fizz")
+		{
 
 			sub_array.push("Fizz");
 
 			fizzC.push(i); // #improved
 
-		else
-			sub_array.push(i);
+		}
+		/*else
+			sub_array.push(i);*/
 
 console.log(sub_array);
-console.log("Prime numbers are:" +primesC.length);
+
+	}
+	console.log("Prime numbers are:" +primesC.length);
 console.log("Even numbers are:" +evensC.length);
 console.log("Odd numbers are:" +oddsC.length);
 console.log("FizzBuzz numbers are:" +fizzbuzzC.length);
 console.log("Fizz numbers are:" +fizzC.length);
 console.log("Buzz numbers are:" +buzzC.length);
-	}
 }
 num_helper_func(0,100);
