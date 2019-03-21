@@ -30,31 +30,43 @@ const num_helper_func = (x,y) =>
 		if (evens(i)===true)
 
 			sub_array.push("Even");
+
+			evensC.push(i); // #improved
 		else
 			sub_array.push("Odd");
 
+
+			oddsC.push(i); // #improved
 
 		if(prime_number_calculator(i)==true)
 
 			sub_array.push("Prime");
 
+			primesC.push(i); // #improved
 
 		if(fizzbuzz(i)=="FizzBuzz") 
 
 			sub_array.push("FizzBuzz");
 
+			fizzbuzzC.push(i); // #improved
+
 		else if(fizzbuzz(i)=="Buzz")
 
 			sub_array.push("Buzz");
+
+			buzzC.push(i); // #improved
 
 		else if(fizzbuzz(i)=="Fizz")
 
 			sub_array.push("Fizz");
 
+			fizzC.push(i); // #improved
+
 		else
 			sub_array.push(i);
 
 console.log(sub_array);
+console.log()
 
 	}
 }
